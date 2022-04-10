@@ -1,18 +1,15 @@
-import video from "../data/video.js";
+import videoData from "../data/video.js";
+import Video from "./Video";
+
 
 function App() {
-  console.log("Here's your data:", video);
-
   return (
-    <div className="App">
-      <iframe
-        width="919"
-        height="525"
-        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-        frameBorder="0"
-        allowFullScreen
-        title="Thinking in React"
-      />
+    <div className='App'>
+      {/* Video Component- Child App.js
+      Video Details Component - Child of Video.js
+      Video Comments Component- Child of Video.js
+      Video Comment Component - Child of VideoComments.js */}
+      <Video videoData= {videoData}/>
     </div>
   );
 }
